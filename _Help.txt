@@ -37,3 +37,9 @@ php artisan route:list
 
 --
 
+php artisan make:test CategoryTest --unit
+php artisan make:test Models/CategoryTest
+
+vendor/bin/phpunit
+vendor/bin/phpunit --filter CategoryTest
+vendor/bin/phpunit --filter CategoryTest::testExample
